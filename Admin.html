@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/Admin.css">
+    <title>Usewr Management</title>
+  </head>
+  <body>
+
+ <header>
+    <div class="navbar bar d-flex align-items-center">
+      <div class="d-flex align-items-center">
+        <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img  src="image/list.svg">
+        </button>
+        <h1 class="h1-title ps-2">helperland</h1>
+      </div>
+      <div class="d-flex align-items-center pb-2 gap-3 pe-3">
+        <img src="image/admin-user.png" alt="">
+        <div class="h2-title">James Smith</div>
+        <img src="image/logout.png" alt="">
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <!--sidebar-->
+        <div class="col-lg-3 col-md-3 col-12 ps-0 pe-0">
+          <div class="card" id="navbarSupportedContent">
+            <ul class="nav tabs d-block text-center text-lg-start">
+              <li class="nav-item">
+                <a class="nav-link" id="tabs-UM" data-bs-toggle="pill" data-bs-target="#tabs-User-Management" aria-controls="tabs-User-management" aria-selected="false" >User Management</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="tabs-SR" data-bs-toggle="pill" data-bs-target="#tabs-Service-Requests" aria-controls="tabs-Service-Requests" aria-selected="false">Service Requests</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--sidebar-ends-->
+        <!--main-content-->  
+        <div class="col-lg-9 col-md-9 col-12 ps-3 pt-4 pe-3 main-body">
+          <div class="tab-content">
+            <div class="tab-pane fade accordian-collapse collapse" id="tabs-User-Management" aria-labelledby="tabs-UM">
+              <div>
+                <div class="d-flex justify-content-between align-items-center fw-bold">User-Management
+                <div class="d-flex add-new-user align-items-center"><img class="pe-1" src="image/circle-plus.png">Add New User</div>
+                </div>
+              </div>
+              <div class="d-flex flex-wrap align-items-center filters pt-3 pb-3 mt-2">
+                <div class="input-group username ps-3">
+                  <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                    <option selected>User Name</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="input-group userrole ps-3">
+                  <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                    <option selected>User role</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="input-group inputnumber ps-3">
+                  <span class="input-group-text justify-content-center number" id="inputGroup-sizing-sm">+49</span>
+                  <input type="Phone Number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Phone Number">
+                </div>
+                <div class="input-group zipcode ps-3"> 
+                    <input class="form-control" type="zipcode" placeholder="Zipcode">
+                </div>  
+                <button type="button" class="btn btn-primary btn-sm search ms-3">Search</button>
+                <button type="button" class="btn btn-primary btn-sm clear ms-3">Clear</button>
+              </div>
+              <div class="table-responsive">
+                <table class="table border-box align-middle mt-3 mb-0  pb-0">
+                  <thead class="table-head">
+                    <tr>
+                      <th>User Name<img class="ms-2" src="image/up-down-arrow.png"></th>
+                      <th>User Type</th>
+                      <th>Role</th>
+                      <th><span>Postal Code<img class="ms-2" src="image/up-down-arrow.png"></span></th>
+                      <th><span>City</span></th>
+                      <th>Radius<img class="ms-2" src="image/up-down-arrow.png"></th>
+                      <th>User Status<img class="ms-2" src="image/up-down-arrow.png"></th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-body">
+                    <tr class="mb-sm-3 mt-sm-3">
+                      <td data-label="User Name">Lyum Watson</td>
+                      <td data-label="User Type">Call Center</td>
+                      <td data-label="Role">Inquiry Manager</td>
+                      <td data-label="Postal Code">123456</td>
+                      <td data-label="City">Berlin</td>
+                      <td data-label="Radius"></td>
+                      <td data-label="User Status"><label class="Active">Active</label></td>
+                      <td data-label="Actions">
+                        <div class=" dropstart">
+                          <button type="button" class="dropdown dots-3" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="image/3-dots.png">
+                          </button>
+                          <ul class="dropdown-menu ps-2 pe-4">
+                            <li>Edit</li>
+                            <li>Deactivate</li> 
+                            <li>Service History</li> 
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="mb-sm-3 mt-sm-3">
+                      <td data-label="User Name">John Smith</td>
+                      <td data-label="User Type">Service Provider</td>
+                      <td data-label="Role"></td>
+                      <td data-label="Postal Code">123456</td>
+                      <td data-label="City">Berlin</td>
+                      <td data-label="Radius">10 kms</td>
+                      <td data-label="User Status"><label class="inactive">Inactive</label></td>
+                      <td data-label="Actions">
+                        <div class="btn-group dropstart">
+                          <button type="button" class="dropdown dots-3" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="image/3-dots.png">
+                          </button>
+                          <ul class="dropdown-menu ps-2 pe-4">
+                            <li>Edit</li>
+                            <li>Deactivate</li> 
+                            <li>Service History</li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="d-flex w-100 end-div pt-1 ps-2 align-items-center justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <span>Show</span>
+                    <select class="form-select border-10 ms-1 me-1" id="inputGroupSelect03" aria-label="Example select with button addon">
+                      <option selected>10</option>
+                      <option value="1">20</option>
+                      <option value="2">30</option>
+                      <option value="3">40</option>
+                    </select>
+                    <span class="">Entries</span>
+                  </div> 
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination pt-2">
+                      <li class="page-item page-link">
+                          <span aria-hidden="true">&laquo;</span>
+                      </li>
+                      <li class="page-item page-link">1</li>
+                      <li class="page-item page-link">2</li>
+                      <li class="page-item page-link">3</li>
+                      <li class="page-item page-link">4</li>
+                      <li class="page-item page-link">5</li>
+                      <li class="page-item page-link">
+                          <span aria-hidden="true">&raquo;</span>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade accordian-collapse collapse" id="tabs-Service-Requests" aria-labelledby="tabs-SR">
+              <div class="d-flex align-items-center fw-bold">Service-Requests</div>
+              <div class="d-flex flex-wrap align-items-center filters pt-3 pb-3 mt-2">
+                <div class="input-group service-id ps-2"> 
+                    <input class="form-control" type="id" placeholder="Service-ID">
+                </div>
+                <div class="input-group customer ps-2">
+                  <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                    <option selected>Customer</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="input-group service-provider ps-2">
+                  <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                    <option selected>Service Provider</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="input-group status ps-2">
+                  <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                    <option selected>Status</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="ms-2 from-date align-items-center">
+                  <span class="ps-2 "><img class="pe-2" src="image/blue-calender.png">From date</span>
+                </div>
+                <div class="ms-2 to-date align-items-center">
+                  <span class="ps-2 "><img class="pe-2" src="image/blue-calender.png">To date</span>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm search ms-2">Search</button>
+                <button type="button" class="btn btn-primary btn-sm clear ms-2">Clear</button>
+              </div>
+              <div class="table-responsive">
+                <table class="table border-box align-middle mt-3 mb-0">
+                  <thead class="table-head">
+                    <tr>
+                      <th>Service ID<img class="ms-2" src="image/up-down-arrow.png"></th>
+                      <th>Service date<img class="ms-2" src="image/up-down-arrow.png"></th>
+                      <th>Customer details<img class="ms-2" src="image/up-down-arrow.png"></th>
+                      <th>Service provider<img class="ms-2" src="image/up-down-arrow.png"></th>
+                      <th>Status<img class="ms-2" src="image/up-down-arrow.png"></th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-body">
+                    <tr>
+                      <td data-label="Service ID">1341968443</td>
+                      <td data-label="Service date"><img class="me-2" src="image/calendar.png">26/12/2021 <br><img class="me-2"src="image/clock.png">12:00-8:00</td>
+                      <td data-label="Customer details">David Bough<br> <img src="image/home-image.png">Musterstrabe 5,12345 Bonn</td>
+                      <td data-label="Service Provider"><div class="cap-star d-flex flex-wrap"><img class="cap me-2" src="image/cap.png"><div class="Service-Provider pb-0 d-flex flex-wrap">Lyum Watson<span class="star"><img src="image/yellow-star.png"><img src="image/yellow-star.png"><img src="image/yellow-star.png"><img src="image/yellow-star.png"><img src="image/white-star.png"></span>4</div></div></td>
+                      <td data-label="Status"><label class="new">New</label></td>
+                      <td data-label="Actions">
+                        <div class="btn-group dropstart">
+                          <button type="button" class="dropdown dots-3" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="image/3-dots.png">
+                          </button>
+                          <ul class="dropdown-menu ps-2 pe-4">
+                            <li>Edit & Reschedule</li>
+                            <li>Refund</li> 
+                            <li>Cancel</li> 
+                            <li>Change SP</li> 
+                            <li>Escalate History</li> 
+                            <li>Log</li> 
+                            <li>Download Invoice</li>
+                          </ul>
+                        </div>  
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Service ID">1341968443</td>
+                      <td data-label="Service date"><img class="me-2" src="image/calendar.png">26/12/2021 <br><img class="me-2"src="image/clock.png">12:00-8:00</td>
+                      <td data-label="Customer details">David Bough<br> <img src="image/home-image.png">Musterstrabe 5,12345 Bonn</td>
+                      <td data-label="Service Provider"><div class="cap-star d-flex flex-wrap"><img class="cap me-2" src="image/cap.png"><div class="Service-Provider pb-0 d-flex flex-wrap">Lyum Watson<span class="star"><img src="image/yellow-star.png"><img src="image/yellow-star.png"><img src="image/yellow-star.png"><img src="image/yellow-star.png"><img src="image/white-star.png"></span>4</div></div></td>
+                      <td data-label="Status"><label class="pending">Pending</label></td>
+                      <td data-label="Actions">
+                        <div class="btn-group dropstart">
+                          <button type="button" class="dropdown dots-3" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="image/3-dots.png">
+                          </button>
+                          <ul class="dropdown-menu ps-2 pe-4">
+                            <li>Edit & Reschedule</li>
+                            <li>Refund</li> 
+                            <li>Cancel</li> 
+                            <li>Change SP</li> 
+                            <li>Escalate History</li> 
+                            <li>Log</li> 
+                            <li>Download Invoice</li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Service ID">1341968443</td>
+                      <td data-label="Service date"><img class="me-2" src="image/calendar.png">26/12/2021 <br><img class="me-2"src="image/clock.png">12:00-8:00</td>
+                      <td data-label="Customer details">David Bough<br> <img src="image/home-image.png">Musterstrabe 5,12345 Bonn</td>
+                      <td data-label="Service Provider"><div class="cap-star d-flex flex-wrap"><img class="cap me-2" src="image/cap.png"><div class="Service-Provider pb-0 d-flex flex-wrap">Lyum Watson<span class="star"><img src="image/yellow-star.png"><img src="image/yellow-star.png"><img src="image/yellow-star.png"><img src="image/yellow-star.png"><img src="image/white-star.png"></span>4</div></div></td>
+                      <td data-label="Status"><label class="completed">Completed</label></td>
+                      <td data-label="Actions">
+                        <div class="btn-group dropstart">
+                          <button type="button" class="dropdown dots-3" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="image/3-dots.png">
+                          </button>
+                          <ul class="dropdown-menu ps-2 pe-4">
+                            <li>Edit & Reschedule</li>
+                            <li>Refund</li> 
+                            <li>Cancel</li> 
+                            <li>Change SP</li> 
+                            <li>Escalate History</li> 
+                            <li>Log</li> 
+                            <li>Download Invoice</li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Service ID">1341968443</td>
+                      <td data-label="Service date"><img class="me-2" src="image/calendar.png">26/12/2021 <br><img class="me-2"src="image/clock.png">12:00-8:00</td>
+                      <td data-label="Customer details">David Bough<br> <img src="image/home-image.png">Musterstrabe 5,12345 Bonn</td>
+                      <td data-label="Service Provider"><div class="cap-star d-flex flex-wrap"><img class="cap me-2" src="image/cap.png"><div class="Service-Provider pb-0 d-flex flex-wrap">Lyum Watson<span class="star"><img src="image/yellow-star.png"><img src="image/yellow-star.png"><img src="image/yellow-star.png"><img src="image/yellow-star.png"><img src="image/white-star.png"></span>4</div></div></td>
+                      <td data-label="Status"><label class="cancelled">Cancelled</label></td>
+                      <td data-label="Actions">
+                        <div class="btn-group dropstart">
+                          <button type="button" class="dropdown dots-3" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="image/3-dots.png">
+                          </button>
+                          <ul class="dropdown-menu ps-2 pe-4">
+                            <li>Edit & Reschedule</li>
+                            <li>Refund</li> 
+                            <li>Cancel</li> 
+                            <li>Change SP</li> 
+                            <li>Escalate History</li> 
+                            <li>Log</li> 
+                            <li>Download Invoice</li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="d-flex w-100 end-div pt-1 ps-2 align-items-center justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <span>Show</span>
+                    <select class="form-select border-10 ms-1 me-1" id="inputGroupSelect03" aria-label="Example select with button addon">
+                      <option selected>10</option>
+                      <option value="1">20</option>
+                      <option value="2">30</option>
+                      <option value="3">40</option>
+                    </select>
+                    <span class="">Entries</span>
+                  </div> 
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination pt-2">
+                      <li class="page-item page-link">
+                          <span aria-hidden="true">&laquo;</span>
+                      </li>
+                      <li class="page-item page-link">1</li>
+                      <li class="page-item page-link">2</li>
+                      <li class="page-item page-link">3</li>
+                      <li class="page-item page-link">4</li>
+                      <li class="page-item page-link">5</li>
+                      <li class="page-item page-link">
+                          <span aria-hidden="true">&raquo;</span>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--main-content-ends-->
+      </div>
+    </div>
+  </section>
+  <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>

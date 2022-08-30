@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Helperland </title>
+	<!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="css/Homepage.css">
+</head>
+<body>
+
+<!--BACKGROUND-->
+  <div class="background" id="top">
+
+<!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="image/big-logo.png" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item text-center active ms-xl-3  mt-xl-0 mt-2 ">
+          <a class="nav-link text-light" aria-current="page" href="#">Book a cleaner</a>
+        </li>
+        <li class="nav-item text-center ms-xl-3  mt-xl-0 mt-2 ">
+          <a class="nav-link text-light" aria-current="page" href="Prices.html">Prices</a>
+        </li>
+        <li class="nav-item text-center ms-xl-3  mt-xl-0 mt-2 ">
+          <a class="nav-link text-light" aria-current="page" href="#">Our Guarantee  </a>
+        </li>
+        <li class="nav-item text-center ms-xl-3  mt-xl-0 mt-2 ">
+          <a class="nav-link text-light" aria-current="page" href="#">Blog</a>
+        </li>
+        <li class="nav-item text-center ms-xl-3  mt-xl-0 mt-2 ">
+          <a class="nav-link text-light" aria-current="page" href="Contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item text-center active ms-xl-3  mt-xl-0 mt-2 ">
+          <a class="nav-link text-light" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Login</a>
+        </li>
+        <li class="nav-item text-center active ms-xl-3  mt-xl-0 mt-2 ">
+          <a class="nav-link text-light" aria-current="page" href="Service-provider.html">Become a Helper</a>
+        </li>
+        <li class="text-center flex-column justify-content-center nav-item dropdown ms-xl-3 mt-xl-0 mt-2">
+          <a  class="nav-link p-2" href="#" id="navbarDropdown" data-bs-toggle="dropdown"aria-expanded="false">
+            <img class="img-fluid" src="image/ic-flag.png" alt="flag" />
+            <img class="img-fluid" src="image/white-downarrow.png" alt="" />
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item bg-transparent" href="#">
+              <img class="img-fluid" src="image/ic-flag.png" alt="flag" />US</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+              <img class="img-fluid" src="image/ic-flag.png" alt="flag" />AUS</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>   
+<!-- Login Regestration  page-->  
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel">Login to your account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-2">
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email id" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-2">
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="mb-2 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+          </div>
+          <button type="submit" class="Log-in w-100">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer Login-footer p-0 m-0">
+        <label class="text-center w-100 color-gradiant pb-0 mb-0" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Forget Password?</label>
+        <label class="text-center w-100 pb-0 mb-0">Don't have an account?<label class="ps-2 color-gradiant" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal" data-bs-dismiss="modal">Create an</label></label>
+        <label  class="text-center w-100 color-gradiant" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal" data-bs-dismiss="modal"> Account</label>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel2">Forget Password</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-2">
+            <input type="email-input" class="form-control" id="exampleInputPassword2" placeholder="Email id">
+          </div>
+          <button type="submit" class="Log-in w-100">Send</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <label  class="text-center w-100 color-gradiant">Login Now</label>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header d-flex flex-column">
+        <div class="w-100 d-flex align-items-center justify-content-center">
+          <h2>Create New Account</h2>
+        </div>
+        <div class="d-flex align-items-center">
+          <div class="separator-border me-2"></div>
+          <img src="image/separator.png">
+          <div class="separator-border ms-2"></div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="row mb-3">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col">
+            <input type="text" class="form-control" placeholder=" Email Address" aria-label="Email Address">
+          </div>
+          <div class="col">
+            <div class="input-group flex-nowrap">
+              <span class="input-group-text ps-1 pe-1" id="addon-wrapping">+49</span>
+              <input type="text" class="form-control ps-1" placeholder="Mobile Number" aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+          </div>
+        </div> 
+        <div class="row">
+          <div class="col">
+            <input type="password" class="form-control" placeholder="Password" aria-label="Password">
+          </div>
+          <div class="col">
+            <input type="password" class="form-control" placeholder="Confirm Password" aria-label="Confirm Password">
+          </div>
+        </div> 
+        <div class="mt-2 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+        </div>
+        <div class="d-flex align-items-center justify-content-center pt-2">
+          <button class="Log-in pt-2 ps-3 pe-3 pb-2">Register</button>
+        </div>
+      </div>
+      <div class="modal-footer w-100 align-items-center justify-content-center">
+        <label>Already registered? <span class="color-gradiant">Login now</span></label>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--PARAGRAPH SECTION-->
+   <div class="container-fluid">
+    <div class="text-light d-flex flex-column ">
+      <h1 class="h1-title p-auto text-left">
+        Lorem ipsum text
+      </h1>
+      <p class="lines mb-1 ms-4 ps-3">
+        <img src="image/right.png" class="logo">
+        Lorem ipsum dolor sit amet consectetur adipisicing
+      </p>
+      <p class="lines mb-1 ms-4 ps-3">
+        <img src="image/right.png" class="logo">
+        Lorem ipsum dolor sit amet consectetur adipisicing
+      </p>
+      <p class="lines mb-1 ms-4 ps-3">
+        <img src="image/right.png" class="logo">
+        Lorem ipsum dolor sit amet consectetur adipisicing
+      </p>
+    </div>
+   </div>
+
+<!--BUTTON SECTION-->   
+   <div class="justify-content-center container-fluid d-flex">
+     <div class="button mt-3"  href="#">
+       Let's Book a Cleaner
+     </div>
+   </div>
+<!--7  IMAGES-->
+
+<div class="container-fluid d-flex flex-wrap gap-3 mt-4 justify-content-center text-light">
+  <div class="d-flex flex-column align-items-center">
+    <img class="img-fluid steps" src="image/step-1.png"/>
+    <p class="mt-4">Enter your postcode</p>
+  </div>
+    <img class="img-fluid mt-3 arrows " src="image/down-arrow.png"/>
+  <div class="d-flex flex-column align-items-center">
+    <img class="img-fluid steps" src="image/step-2.png"/>
+    <p class="mt-4">Select your plan</p>
+  </div>
+    <img class="img-fluid mt-3 arrows" src="image/up-arrow.png"/>
+  <div class="d-flex flex-column align-items-center">
+    <img class="img-fluid steps" src="image/step-3.png"/>
+    <p class="mt-4">Pay securely online</p>
+  </div>
+    <img class="img-fluid mt-3 arrows " src="image/down-arrow.png"/>
+  <div class="d-flex flex-column align-items-center">
+    <img class="img-fluid steps" src="image/step-4.png"/>
+    <p class="mt-4">Enjoy amazing service</p>
+  </div>
+</div>
+<!--down-arrow--> 
+<div class="container-fluid d-flex flex-column mt-4 pb-3 justify-content-center align-items-center">
+  <a href="#why-helperland"><img src="image/circular-arrow.png"></a>
+</div> 
+</div>
+
+<!--WHY HELPERLAND-->
+<div id="why-helperland"></div>                                 
+<div class="container d-flex flex-column align-items-center mt-5 pt-3">
+  <h2 class="why-helperland">Why Helperland</h2> 
+</div>
+<div class="container d-flex gx-5 mt-4 mb-5 pb-5 flex-wrap flex-xl-nowrap justify-content-around flex-row">
+  <div class="grid-1 d-flex flex-column align-items-center">
+    <img class="img-fluid pb-4" src="image/grid-1.1.png">
+    <h3 class="grid-1-title pb-4">Experience & Vetted Professionals</h3>
+    <p class="grid-1-p">dominate the industry in scale and scope with an adaptable, extensive network that consistently delivers exceptional results.</p>
+  </div>
+  <div class="grid-1 d-flex flex-column align-items-center">
+    <img class="img-fluid pb-4" src="image/grid-1.2.png">
+    <h3 class="grid-1-title pb-5 mb-3">Secure Online Payment</h3>
+    <p class="grid-1-p">Payment is processed securely online. Customers pay safely online and manage the booking.</p>
+  </div>
+  <div class="grid-1 d-flex flex-column align-items-center">
+    <img class="img-fluid pb-4" src="image/grid-1.3.png">
+    <h3 class="grid-1-title pb-4">Dedicated Customer Service</h3>
+    <p class="grid-1-p">to our customers and are guided in all we do by their needs. The team is always happy to support you and offer all the information.</p>
+  </div>
+</div>  
+<!--TRIPLE IMAGE-->  
+  <section class="triple-image">                                                
+  <div class="container d-flex flex-wrap flex-xl-nowrap flex-row justify-content-around mb-3">
+    <div class="d-flex flex-row flex-xl-nowrap flex-wrap justify-content-around mt-3">
+      <div class="order-xl-0 order-1 mt-3 pt-2">
+        <h4 class="triple-image-title text-xl-start text-center">
+          Lorem ipsum dolor sit amet,
+          consectetur
+        </h4>
+        <p class="triple-image-p text-xl-start text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+          nisi sapien, suscipit ut accumsan vitae, pulvinar ac libero.
+        </p>
+        <p class="triple-image-p text-xl-start text-center">
+          Aliquam erat volutpat. Nullam quis ex odio. Nam bibendum cursus
+          purus, vel efficitur urna finibus vitae. Nullam finibus aliquet
+          pharetra. Morbi in sem dolor. Integer pretium hendrerit ante quis
+          vehicula.
+        </p>
+        <p class="triple-image-p text-xl-start text-center">
+          Mauris consequat ornare enim, sed lobortis quam ultrices sed.
+        </p>
+      </div>
+      <img class="img-fluid triple-image-i order-xl-1 order-0 mx-xl-5 pb-2 mx-0" src="image/triple-image.png">
+    </div>
+  </div>
+  <h5 class="our-blog container d-flex justify-content-center pb-5">
+    Our Blog
+  </h5>
+  <div class="container d-flex flex-wrap flex-xl-nowrap flex-row ps-4 pe-4 justify-content-around pb-5">
+    <div class="grid-2 d-flex flex-column shadow mb-3">
+      <img class="img-fluid" src="image/grid-2.1.png">
+      <p class="grid-2-title ps-3">Lorem ipsum dolor sit amet</p>
+      <span class="grid-2-time ps-3 pb-2">January 28, 2019</span>
+      <p class="grid-2-p ps-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum metus pulvinar aliquet.</p>
+      <p class="grid-2-read ps-3">Read the Post<img class="img-fluid ps-2" src="image/black-arrow.png"></p>
+    </div>
+    
+    <div class="grid-2 d-flex flex-column shadow mb-3">
+      <img class="img-fluid" src="image/grid-2.2.png">
+      <p class="grid-2-title ps-3">Lorem ipsum dolor sit amet</p>
+      <span class="grid-2-time ps-3 pb-2">January 28, 2019</span>
+      <p class="grid-2-p ps-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum metus pulvinar aliquet.</p>
+      <p class="grid-2-read ps-3">Read the Post<img class="img-fluid ps-2" src="image/black-arrow.png"></p>
+    </div>
+    
+    <div class="grid-2 d-flex flex-column shadow mb-3">
+      <img class="img-fluid" src="image/grid-2.3.png">
+      <p class="grid-2-title ps-3">Lorem ipsum dolor sit amet</p>
+      <span class="grid-2-time ps-3 pb-2">January 28, 2019</span>
+      <p class="grid-2-p ps-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum metus pulvinar aliquet.</p>
+      <p class="grid-2-read ps-3">Read the Post<img class="img-fluid ps-2" src="image/black-arrow.png"></p>
+    </div>
+  </div>
+  </section>
+
+<!--What Our Customers Say-->
+
+<h6 class="customer-detail d-flex justify-content-center pt-5 pb-5">
+  What Our Customers Say
+</h6>
+<div class="container-fluid grid-3-background">
+<div class="grid container d-flex flex-wrap flex-xl-nowrap flex-row justify-content-around pb-5">
+  
+  <div class="grid-3 d-flex flex-column shadow mb-3">
+    <div class="ps-3 pt-5 d-flex img-fluid grid-3-image">
+      <img src="image/grid-3.1.png"> 
+        <div class="d-flex justify-content-center ps-3">
+          <span class="grid-3-name pt-2">Lary Watson
+          <h6 class="grid-3-city">Manchester</h6></span>
+        </div>
+    </div>
+    <p class="grid-3-p pt-3 ps-3 pe-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum metus pulvinar aliquet consequat. Praesent nec malesuada nibh.</p>
+
+    <p class="grid-3-p pt-3 ps-3 pe-2">Nullam et metus congue, auctor augue sit amet, consectetur tortor. </p>
+    <p class="grid-3-read ps-3">Read More<img class="img-fluid" src="image/black-arrow.png"></p>
+  </div>
+
+   <div class="grid-3 d-flex flex-column shadow mb-3">
+    <div class="ps-3 pt-5 d-flex img-fluid grid-3-image">
+      <img src="image/grid-3.2.png"> 
+        <div class="d-flex justify-content-center ps-3">
+          <span class="grid-3-name pt-2">John Smith
+          <h6 class="grid-3-city">Manchester</h6></span>
+        </div>
+    </div>
+    <p class="grid-3-p pt-3 ps-3 pe-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum metus pulvinar aliquet consequat. Praesent nec malesuada nibh.</p>
+
+    <p class="grid-3-p pt-3 ps-3 pe-2">Nullam et metus congue, auctor augue sit amet, consectetur tortor. </p>
+    <p class="grid-3-read ps-3">Read More<img class="img-fluid" src="image/black-arrow.png"></p>
+  </div>
+
+   <div class="grid-3 d-flex flex-column shadow mb-3">
+    <div class="ps-3 pt-5 d-flex img-fluid grid-3-image">
+      <img src="image/grid-3.3.png"> 
+        <div class="d-flex justify-content-center ps-3">
+          <span class="grid-3-name pt-2">Lars Johnson
+          <h6 class="grid-3-city">Manchester</h6></span>
+        </div>
+    </div>
+    <p class="grid-3-p pt-3 ps-3 pe-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum metus pulvinar aliquet consequat. Praesent nec malesuada nibh.</p>
+
+    <p class="grid-3-p pt-3 ps-3 pe-2">Nullam et metus congue, auctor augue sit amet, consectetur tortor. </p>
+    <p class="grid-3-read ps-3">Read More<img class="img-fluid" src="image/black-arrow.png"></p>
+  </div>
+</div>
+</div>
+<!--FOOTER-->
+<div class="footer container-fluid d-flex pb-5">
+  <div class="d-flex arrow-background align-items-center mt-3 ms-4">
+    <a href="#top"><img src="image/newsletter-arrow.png"></a>
+  </div>
+  <div class=" footer-news-letter d-flex flex-column justify-content-center">
+    <h6 class="news-letter pb-2 text-center">GET OUR NEWSLETTER</h6>
+    <div class="d-flex flex-wrap justify-content-center gap-4">
+      <input class="email-input py-2" type="email" placeholder="YOUR EMAIL">
+      <div class="submit">Submit</div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center align-items-center">
+    <img class="img-fluid" src="image/pink-clock.png">
+  </div>
+</div>
+<div class="footer-navbar px-5 py-4 d-flex justify-content-between align-items-center flex-lg-row flex-column">
+  <img class="mx-lg-4 ms-4 mb-lg-0 mb-3" src="image/logo-small.png">
+  <ul class=" d-flex flex-lg-row gap-lg-4 gap-0 pe-lg-5 me-lg-5 text-center flex-column ">
+    <li class="mb-lg-0 mb-2">
+      <a href="index.html">HOME</a>
+    </li>
+    <li class="mb-lg-0 mb-2">
+      <a href="About.html">ABOUT</a>
+    </li>
+    <li class="mb-lg-0 mb-2">
+      TESTIMONIALS
+    </li>
+    <li class="mb-lg-0 mb-2">
+      <a href="FAQ.html">FAQs</a>
+    </li>
+    <li class="mb-lg-0 mb-2">
+      INSURANCE POLICY
+    </li>
+    <li class="mb-lg-0 mb-2">
+      IMPRESSUM
+    </li>
+  </ul>
+  <div class="social-media">
+    <img class="me-2 ps-4 " src="image/facebook.png">
+    <img src="image/instagram.png">
+  </div>
+</div>
+<section id="footer-privacy-policy">
+<div class="privacy-policy mt-2 d-flex justify-content-center align-items-center fixed-bottom">
+  <p class="mx-auto mt-3 privacy-policy-p">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nunc
+        libero, ac malesuada ligula aliquam ac.
+    <a href="#" id="privacy-policy">Privacy Policy</a>
+  </p>
+  <button class="ok-button" id="privacy-policy-ok-button">OK!</button>
+</div>
+</section>
+
+
+
+</div>
+
+<!--bootstrap scripts-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
